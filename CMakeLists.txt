@@ -4,4 +4,4 @@ project(coologger)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(coologger example.cpp
-        coologger.hpp)
+        include/coologger.hpp)

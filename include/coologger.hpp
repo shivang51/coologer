@@ -83,6 +83,7 @@ namespace Coolog{
             auto time = getCurrentTime("%a %d-%m %X");
             std::cout << Modifier::fromLogLevel(level, true);
             std::cout << "[";
+            std::cout << logLevelToStr(level) << " | ";
             if(!m_name.empty()) std::cout << m_name << " | ";
             std::cout << time << "] ";
             std::cout << std::vformat(message, std::make_format_args(args...));
