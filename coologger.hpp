@@ -64,6 +64,7 @@ namespace Coolog{
 
             std::cout << Modifier::fromLogLevel(level, false);
             std::cout << "[";
+            std::cout << logLevelToStr(level) << " | ";
             if(!m_name.empty()) std::cout << m_name << " | ";
             std::cout << time << "] ";
             std::cout << std::vformat(message, std::make_format_args(args...));
